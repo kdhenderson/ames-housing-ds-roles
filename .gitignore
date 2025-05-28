@@ -1,8 +1,10 @@
-__pycache__/
-*.pyc
-.DS_Store
-.env
-venv/
-*.log 
-spaces/
-.cursor/ 
+__pycache__/      # Ignores Python bytecode cache directories
+*.pyc             # Ignores Python bytecode files
+.DS_Store         # Ignores macOS system files
+.env              # Ignores environment variable files
+venv/             # Ignores your virtual environment directory
+*.log             # Ignores all log files
+spaces/           # Ignores your Hugging Face spaces directory
+.cursor/          # Ignores Cursor IDE settings
+.Rhistory         # Ignores R history files
+.cursorignore     # Ignores Cursor IDE ignore rules
