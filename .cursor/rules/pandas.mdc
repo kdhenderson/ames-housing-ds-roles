@@ -1,6 +1,0 @@
----
-description: 
-globs: 
-alwaysApply: true
----
-Never use pandas in python scripts.

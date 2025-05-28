@@ -1,6 +1,0 @@
----
-description: 
-globs: 
-alwaysApply: true
----
-Always use a naming convention that starts with the topic followed by underscores. Avoid using capital letters. Never use the name of the folder. I want names that convey the importance of the idea.
