@@ -1,0 +1,227 @@
+{
+    "MS Zoning": {
+        "a (agr)": 0,
+        "c (all)": 1,
+        "fv": 2,
+        "i (all)": 3,
+        "rh": 4,
+        "rl": 5,
+        "rm": 6
+    },
+    "Street": {
+        "grvl": 0,
+        "pave": 1
+    },
+    "Alley": {
+        "grvl": 0,
+        "na": 1,
+        "pave": 2
+    },
+    "Land Contour": {
+        "bnk": 0,
+        "hls": 1,
+        "low": 2,
+        "lvl": 3
+    },
+    "Lot Config": {
+        "corner": 0,
+        "culdsac": 1,
+        "fr2": 2,
+        "fr3": 3,
+        "inside": 4
+    },
+    "Neighborhood": {
+        "blmngtn": 0,
+        "blueste": 1,
+        "brdale": 2,
+        "brkside": 3,
+        "clearcr": 4,
+        "collgcr": 5,
+        "crawfor": 6,
+        "edwards": 7,
+        "gilbert": 8,
+        "greens": 9,
+        "grnhill": 10,
+        "idotrr": 11,
+        "landmrk": 12,
+        "meadowv": 13,
+        "mitchel": 14,
+        "names": 15,
+        "noridge": 16,
+        "npkvill": 17,
+        "nridght": 18,
+        "nwames": 19,
+        "oldtown": 20,
+        "sawyer": 21,
+        "sawyerw": 22,
+        "somerst": 23,
+        "stonebr": 24,
+        "swisu": 25,
+        "timber": 26,
+        "veenker": 27
+    },
+    "Condition 1": {
+        "artery": 0,
+        "feedr": 1,
+        "norm": 2,
+        "posa": 3,
+        "posn": 4,
+        "rrae": 5,
+        "rran": 6,
+        "rrne": 7,
+        "rrnn": 8
+    },
+    "Condition 2": {
+        "artery": 0,
+        "feedr": 1,
+        "norm": 2,
+        "posa": 3,
+        "posn": 4,
+        "rrae": 5,
+        "rran": 6,
+        "rrnn": 7
+    },
+    "Bldg Type": {
+        "1fam": 0,
+        "2fmcon": 1,
+        "duplex": 2,
+        "twnhs": 3,
+        "twnhse": 4
+    },
+    "House Style": {
+        "1.5fin": 0,
+        "1.5unf": 1,
+        "1story": 2,
+        "2.5fin": 3,
+        "2.5unf": 4,
+        "2story": 5,
+        "sfoyer": 6,
+        "slvl": 7
+    },
+    "Roof Style": {
+        "flat": 0,
+        "gable": 1,
+        "gambrel": 2,
+        "hip": 3,
+        "mansard": 4,
+        "shed": 5
+    },
+    "Roof Matl": {
+        "clytile": 0,
+        "compshg": 1,
+        "membran": 2,
+        "metal": 3,
+        "roll": 4,
+        "tar&grv": 5,
+        "wdshake": 6,
+        "wdshngl": 7
+    },
+    "Exterior 1st": {
+        "asbshng": 0,
+        "asphshn": 1,
+        "brkcomm": 2,
+        "brkface": 3,
+        "cblock": 4,
+        "cemntbd": 5,
+        "hdboard": 6,
+        "imstucc": 7,
+        "metalsd": 8,
+        "plywood": 9,
+        "precast": 10,
+        "stone": 11,
+        "stucco": 12,
+        "vinylsd": 13,
+        "wd sdng": 14,
+        "wdshing": 15
+    },
+    "Exterior 2nd": {
+        "asbshng": 0,
+        "asphshn": 1,
+        "brk cmn": 2,
+        "brkface": 3,
+        "cblock": 4,
+        "cmentbd": 5,
+        "hdboard": 6,
+        "imstucc": 7,
+        "metalsd": 8,
+        "other": 9,
+        "plywood": 10,
+        "precast": 11,
+        "stone": 12,
+        "stucco": 13,
+        "vinylsd": 14,
+        "wd sdng": 15,
+        "wd shng": 16
+    },
+    "Mas Vnr Type": {
+        "brkcmn": 0,
+        "brkface": 1,
+        "cblock": 2,
+        "none": 3,
+        "stone": 4
+    },
+    "Foundation": {
+        "brktil": 0,
+        "cblock": 1,
+        "pconc": 2,
+        "slab": 3,
+        "stone": 4,
+        "wood": 5
+    },
+    "Heating": {
+        "floor": 0,
+        "gasa": 1,
+        "gasw": 2,
+        "grav": 3,
+        "othw": 4,
+        "wall": 5
+    },
+    "Central Air": {
+        "n": 0,
+        "y": 1
+    },
+    "Electrical": {
+        "fusea": 0,
+        "fusef": 1,
+        "fusep": 2,
+        "mix": 3,
+        "sbrkr": 4
+    },
+    "Misc Feature": {
+        "elev": 0,
+        "gar2": 1,
+        "na": 2,
+        "othr": 3,
+        "shed": 4,
+        "tenc": 5
+    },
+    "Sale Type": {
+        "cod": 0,
+        "con": 1,
+        "conld": 2,
+        "conli": 3,
+        "conlw": 4,
+        "cwd": 5,
+        "new": 6,
+        "oth": 7,
+        "vwd": 8,
+        "wd": 9
+    },
+    "Sale Condition": {
+        "abnorml": 0,
+        "adjland": 1,
+        "alloca": 2,
+        "family": 3,
+        "normal": 4,
+        "partial": 5
+    },
+    "Garage Type": {
+        "2types": 0,
+        "attchd": 1,
+        "basment": 2,
+        "builtin": 3,
+        "carport": 4,
+        "detchd": 5,
+        "na": 6
+    }
+}

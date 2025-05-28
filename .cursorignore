@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.env
+.venv
+env/
+ENV/
+
+# Data files
+*.csv
+*.xlsx
+*.xls
+*.db
+*.sqlite
+*.zip
+*.gz
+*.tar
+*.rar
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Project specific
+keras_tuner_dir/
+figures/
+data/
+*.docx
+*.pdf
+
+# Logs and temporary files
+*.log
+*.tmp 

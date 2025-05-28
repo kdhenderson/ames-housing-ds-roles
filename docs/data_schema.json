@@ -1,0 +1,425 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Ames Housing Dataset Schema",
+    "description": "Schema definition for the Ames Housing dataset after ETL processing",
+    "type": "object",
+    "properties": {
+        "Id": {
+            "type": "integer",
+            "description": "Unique identifier for each house",
+            "minimum": 1
+        },
+        "MS SubClass": {
+            "type": "integer",
+            "description": "Building class",
+            "minimum": 0
+        },
+        "MS Zoning": {
+            "type": "string",
+            "description": "Identifies the general zoning classification",
+            "enum": ["A", "C", "FV", "I", "RH", "RL", "RP", "RM"]
+        },
+        "Lot Frontage": {
+            "type": "number",
+            "description": "Linear feet of street connected to property",
+            "minimum": 0
+        },
+        "Lot Area": {
+            "type": "number",
+            "description": "Lot size in square feet",
+            "minimum": 0
+        },
+        "Street": {
+            "type": "string",
+            "description": "Type of road access to property",
+            "enum": ["Grvl", "Pave"]
+        },
+        "Alley": {
+            "type": "string",
+            "description": "Type of alley access",
+            "enum": ["Grvl", "Pave", "NA"]
+        },
+        "Lot Shape": {
+            "type": "string",
+            "description": "General shape of property",
+            "enum": ["Reg", "IR1", "IR2", "IR3"]
+        },
+        "Land Contour": {
+            "type": "string",
+            "description": "Flatness of the property",
+            "enum": ["Lvl", "Bnk", "HLS", "Low"]
+        },
+        "Utilities": {
+            "type": "string",
+            "description": "Type of utilities available",
+            "enum": ["AllPub", "NoSewr", "NoSeWa", "ELO"]
+        },
+        "Lot Config": {
+            "type": "string",
+            "description": "Lot configuration",
+            "enum": ["Inside", "Corner", "CulDSac", "FR2", "FR3"]
+        },
+        "Land Slope": {
+            "type": "string",
+            "description": "Slope of property",
+            "enum": ["Gtl", "Mod", "Sev"]
+        },
+        "Neighborhood": {
+            "type": "string",
+            "description": "Physical locations within Ames city limits"
+        },
+        "Condition 1": {
+            "type": "string",
+            "description": "Proximity to various conditions",
+            "enum": ["Norm", "Feedr", "PosN", "PosA", "RRNe", "RRNn", "RRAn", "RRAe"]
+        },
+        "Condition 2": {
+            "type": "string",
+            "description": "Proximity to various conditions (if more than one is present)",
+            "enum": ["Norm", "Feedr", "PosN", "PosA", "RRNe", "RRNn", "RRAn", "RRAe"]
+        },
+        "Bldg Type": {
+            "type": "string",
+            "description": "Type of dwelling",
+            "enum": ["1Fam", "2FmCon", "Duplex", "TwnhsE", "Twnhs"]
+        },
+        "House Style": {
+            "type": "string",
+            "description": "Style of dwelling",
+            "enum": ["1Story", "1.5Fin", "1.5Unf", "2Story", "2.5Fin", "2.5Unf", "SFoyer", "SLvl"]
+        },
+        "Overall Qual": {
+            "type": "integer",
+            "description": "Overall material and finish quality",
+            "minimum": 1,
+            "maximum": 10
+        },
+        "Overall Cond": {
+            "type": "integer",
+            "description": "Overall condition rating",
+            "minimum": 1,
+            "maximum": 10
+        },
+        "Year Built": {
+            "type": "integer",
+            "description": "Original construction date",
+            "minimum": 1800,
+            "maximum": 2024
+        },
+        "Year Remod/Add": {
+            "type": "integer",
+            "description": "Remodel date",
+            "minimum": 1800,
+            "maximum": 2024
+        },
+        "Roof Style": {
+            "type": "string",
+            "description": "Type of roof",
+            "enum": ["Flat", "Gable", "Gambrel", "Hip", "Mansard", "Shed"]
+        },
+        "Roof Matl": {
+            "type": "string",
+            "description": "Roof material",
+            "enum": ["ClyTile", "CompShg", "Membran", "Metal", "Roll", "Tar&Grv", "WdShake", "WdShngl"]
+        },
+        "Exterior 1st": {
+            "type": "string",
+            "description": "Exterior covering on house"
+        },
+        "Exterior 2nd": {
+            "type": "string",
+            "description": "Exterior covering on house (if more than one material)"
+        },
+        "Mas Vnr Type": {
+            "type": "string",
+            "description": "Masonry veneer type",
+            "enum": ["BrkCmn", "BrkFace", "CBlock", "None", "Stone"]
+        },
+        "Mas Vnr Area": {
+            "type": "number",
+            "description": "Masonry veneer area in square feet",
+            "minimum": 0
+        },
+        "Exter Qual": {
+            "type": "string",
+            "description": "Exterior material quality",
+            "enum": ["Ex", "Gd", "TA", "Fa", "Po"]
+        },
+        "Exter Cond": {
+            "type": "string",
+            "description": "Exterior condition",
+            "enum": ["Ex", "Gd", "TA", "Fa", "Po"]
+        },
+        "Foundation": {
+            "type": "string",
+            "description": "Type of foundation",
+            "enum": ["BrkTil", "CBlock", "PConc", "Slab", "Stone", "Wood"]
+        },
+        "Bsmt Qual": {
+            "type": "string",
+            "description": "Basement height quality",
+            "enum": ["Ex", "Gd", "TA", "Fa", "Po", "NA"]
+        },
+        "Bsmt Cond": {
+            "type": "string",
+            "description": "Basement condition",
+            "enum": ["Ex", "Gd", "TA", "Fa", "Po", "NA"]
+        },
+        "Bsmt Exposure": {
+            "type": "string",
+            "description": "Basement walkout or garden level walls",
+            "enum": ["Gd", "Av", "Mn", "No", "NA"]
+        },
+        "BsmtFin Type 1": {
+            "type": "string",
+            "description": "Rating of basement finished area",
+            "enum": ["GLQ", "ALQ", "BLQ", "Rec", "LwQ", "Unf", "NA"]
+        },
+        "BsmtFin SF 1": {
+            "type": "number",
+            "description": "Type 1 finished square feet",
+            "minimum": 0
+        },
+        "BsmtFin Type 2": {
+            "type": "string",
+            "description": "Rating of basement finished area (if multiple types)",
+            "enum": ["GLQ", "ALQ", "BLQ", "Rec", "LwQ", "Unf", "NA"]
+        },
+        "BsmtFin SF 2": {
+            "type": "number",
+            "description": "Type 2 finished square feet",
+            "minimum": 0
+        },
+        "Bsmt Unf SF": {
+            "type": "number",
+            "description": "Unfinished square feet of basement area",
+            "minimum": 0
+        },
+        "Total Bsmt SF": {
+            "type": "number",
+            "description": "Total square feet of basement area",
+            "minimum": 0
+        },
+        "Heating": {
+            "type": "string",
+            "description": "Type of heating",
+            "enum": ["Floor", "GasA", "GasW", "Grav", "OthW", "Wall"]
+        },
+        "Heating QC": {
+            "type": "string",
+            "description": "Heating quality and condition",
+            "enum": ["Ex", "Gd", "TA", "Fa", "Po"]
+        },
+        "Central Air": {
+            "type": "string",
+            "description": "Central air conditioning",
+            "enum": ["N", "Y"]
+        },
+        "Electrical": {
+            "type": "string",
+            "description": "Electrical system",
+            "enum": ["SBrkr", "FuseA", "FuseF", "FuseP", "Mix"]
+        },
+        "1st Flr SF": {
+            "type": "number",
+            "description": "First floor square feet",
+            "minimum": 0
+        },
+        "2nd Flr SF": {
+            "type": "number",
+            "description": "Second floor square feet",
+            "minimum": 0
+        },
+        "Low Qual Fin SF": {
+            "type": "number",
+            "description": "Low quality finished square feet",
+            "minimum": 0
+        },
+        "Gr Liv Area": {
+            "type": "number",
+            "description": "Above grade (ground) living area",
+            "minimum": 0
+        },
+        "Bsmt Full Bath": {
+            "type": "number",
+            "description": "Basement full bathrooms",
+            "minimum": 0
+        },
+        "Bsmt Half Bath": {
+            "type": "number",
+            "description": "Basement half bathrooms",
+            "minimum": 0
+        },
+        "Full Bath": {
+            "type": "number",
+            "description": "Full bathrooms above grade",
+            "minimum": 0
+        },
+        "Half Bath": {
+            "type": "number",
+            "description": "Half baths above grade",
+            "minimum": 0
+        },
+        "Bedroom AbvGr": {
+            "type": "integer",
+            "description": "Bedrooms above grade",
+            "minimum": 0
+        },
+        "Kitchen AbvGr": {
+            "type": "integer",
+            "description": "Kitchens above grade",
+            "minimum": 0
+        },
+        "Kitchen Qual": {
+            "type": "string",
+            "description": "Kitchen quality",
+            "enum": ["Ex", "Gd", "TA", "Fa", "Po"]
+        },
+        "TotRms AbvGrd": {
+            "type": "integer",
+            "description": "Total rooms above grade",
+            "minimum": 0
+        },
+        "Functional": {
+            "type": "string",
+            "description": "Home functionality",
+            "enum": ["Typ", "Min1", "Min2", "Mod", "Maj1", "Maj2", "Sev", "Sal"]
+        },
+        "Fireplaces": {
+            "type": "integer",
+            "description": "Number of fireplaces",
+            "minimum": 0
+        },
+        "Fireplace Qu": {
+            "type": "string",
+            "description": "Fireplace quality",
+            "enum": ["Ex", "Gd", "TA", "Fa", "Po", "NA"]
+        },
+        "Garage Type": {
+            "type": "string",
+            "description": "Garage location",
+            "enum": ["2Types", "Attchd", "Basment", "BuiltIn", "CarPort", "Detchd", "NA"]
+        },
+        "Garage Yr Blt": {
+            "type": "integer",
+            "description": "Year garage was built",
+            "minimum": 1800,
+            "maximum": 2024
+        },
+        "Garage Finish": {
+            "type": "string",
+            "description": "Interior finish of the garage",
+            "enum": ["Fin", "RFn", "Unf", "NA"]
+        },
+        "Garage Cars": {
+            "type": "number",
+            "description": "Size of garage in car capacity",
+            "minimum": 0
+        },
+        "Garage Area": {
+            "type": "number",
+            "description": "Size of garage in square feet",
+            "minimum": 0
+        },
+        "Garage Qual": {
+            "type": "string",
+            "description": "Garage quality",
+            "enum": ["Ex", "Gd", "TA", "Fa", "Po", "NA"]
+        },
+        "Garage Cond": {
+            "type": "string",
+            "description": "Garage condition",
+            "enum": ["Ex", "Gd", "TA", "Fa", "Po", "NA"]
+        },
+        "Paved Drive": {
+            "type": "string",
+            "description": "Paved driveway",
+            "enum": ["Y", "P", "N"]
+        },
+        "Wood Deck SF": {
+            "type": "number",
+            "description": "Wood deck area in square feet",
+            "minimum": 0
+        },
+        "Open Porch SF": {
+            "type": "number",
+            "description": "Open porch area in square feet",
+            "minimum": 0
+        },
+        "Enclosed Porch": {
+            "type": "number",
+            "description": "Enclosed porch area in square feet",
+            "minimum": 0
+        },
+        "3Ssn Porch": {
+            "type": "number",
+            "description": "Three season porch area in square feet",
+            "minimum": 0
+        },
+        "Screen Porch": {
+            "type": "number",
+            "description": "Screen porch area in square feet",
+            "minimum": 0
+        },
+        "Pool Area": {
+            "type": "number",
+            "description": "Pool area in square feet",
+            "minimum": 0
+        },
+        "Pool QC": {
+            "type": "string",
+            "description": "Pool quality",
+            "enum": ["Ex", "Gd", "TA", "Fa", "NA"]
+        },
+        "Fence": {
+            "type": "string",
+            "description": "Fence quality",
+            "enum": ["GdPrv", "MnPrv", "GdWo", "MnWw", "NA"]
+        },
+        "Misc Feature": {
+            "type": "string",
+            "description": "Miscellaneous feature not covered in other categories",
+            "enum": ["Elev", "Gar2", "Othr", "Shed", "TenC", "NA"]
+        },
+        "Misc Val": {
+            "type": "number",
+            "description": "Value of miscellaneous feature",
+            "minimum": 0
+        },
+        "Mo Sold": {
+            "type": "integer",
+            "description": "Month Sold",
+            "minimum": 1,
+            "maximum": 12
+        },
+        "Yr Sold": {
+            "type": "integer",
+            "description": "Year Sold",
+            "minimum": 1800,
+            "maximum": 2024
+        },
+        "Sale Type": {
+            "type": "string",
+            "description": "Type of sale",
+            "enum": ["WD", "CWD", "VWD", "New", "COD", "Con", "ConLw", "ConLI", "ConLD", "Oth"]
+        },
+        "Sale Condition": {
+            "type": "string",
+            "description": "Condition of sale",
+            "enum": ["Normal", "Abnorml", "AdjLand", "Alloca", "Family"]
+        },
+        "SalePrice": {
+            "type": "number",
+            "description": "Target variable: Sale price in dollars",
+            "minimum": 0
+        },
+        "TotalSF": {
+            "type": "number",
+            "description": "Engineered: Total square feet (basement + 1st + 2nd floor)",
+            "minimum": 0,
+            "dependencies": ["Total Bsmt SF", "1st Flr SF", "2nd Flr SF"]
+        }
+    },
+    "required": ["Id", "SalePrice"],
+    "additionalProperties": false
+} 
